@@ -1,0 +1,28 @@
+<div>
+  <table mat-table>
+    <thead>
+      <tr>
+        <th>name</th>
+        <th>age</th>
+        <th>city</th>
+        <th>action</th> 
+      </tr>
+    </thead>
+    <tbody>
+      <tr *ngFor="let arr of table">
+        <td>{{ arr.name }}</td>
+        <td>{{ arr.age }}</td>
+        <td>{{ arr.city }}</td>
+        <td>
+          <button mat-icon-button matTooltip="Delete" (click)="del()">
+            <mat-icon>delete</mat-icon>
+          </button>
+        </td>
+      </tr>
+    </tbody>
+  </table>
+
+<div><mat-icon aria-hidden="false" aria-label="Example home icon" fontIcon="home"></mat-icon>
+</div>
+
+
